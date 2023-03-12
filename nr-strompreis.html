@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    RED.nodes.registerType('Strompreis',{
+        category: 'Corrently',
+        color: '#a0d0a0',
+        defaults: {
+            name: {value:""},
+            zip: {type:"string"}
+        },
+        inputs:1,
+        outputs:1,
+        outputLabels:['Electricity prices now'], 
+        icon: "font-awesome/fa-money",
+        label: function() {
+            return this.name||"Strompreis";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="Strompreis">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-zip"><i class="fa fa-code"></i> Postal Code</label>
+        <input type="text" id="node-input-zip" placeholder="(10117 for Berlin)">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="Strompreis">
+    <p>Strompreis for Germany</p>
+</script>

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "668d1cddf6c12690",
+        "type": "tab",
+        "label": "Strompreis",
+        "disabled": false,
+        "info": "Sample Flow to illustrate usage of Electricity Price retrieve via API.",
+        "env": []
+    },
+    {
+        "id": "79ac6d62634269b3",
+        "type": "inject",
+        "z": "668d1cddf6c12690",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 300,
+        "y": 100,
+        "wires": [
+            [
+                "b4d3864e687c7961"
+            ]
+        ]
+    },
+    {
+        "id": "b4d3864e687c7961",
+        "type": "Strompreis",
+        "z": "668d1cddf6c12690",
+        "name": "",
+        "zip": "10117",
+        "x": 510,
+        "y": 100,
+        "wires": [
+            [
+                "9d9da63ccee9017c"
+            ]
+        ]
+    },
+    {
+        "id": "9d9da63ccee9017c",
+        "type": "debug",
+        "z": "668d1cddf6c12690",
+        "name": "Result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 100,
+        "wires": []
+    }
+]

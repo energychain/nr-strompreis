@@ -1,0 +1,38 @@
+{
+  "name": "nr-strompreis",
+  "version": "1.0.0",
+  "description": "NodeRed Node to retrieve electricity price in Germany (local and national)",
+  "main": "nr-strompreis.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/energychain/nr-strompreis.git"
+  },
+  "keywords": [
+    "strompreis",
+    "marktdaten",
+    "stromdao",
+    "corrently",
+    "node-red"
+  ],
+  "author": "STROMDAO GmbH <dev@stromdao.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/energychain/nr-strompreis/issues"
+  },
+  "homepage": "https://github.com/energychain/nr-strompreis#readme",
+  "dependencies": {
+    "axios": "^0.22.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "node-red": {
+    "version": ">=2.1.0",
+    "nodes": {
+      "Strompreis": "nr-strompreis.js"
+    }
+  }
+}
