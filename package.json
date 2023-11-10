@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/energychain/nr-strompreis#readme",
   "dependencies": {
-    "axios": "^0.22.0"
+    "axios": "^1.6.0"
   },
   "engines": {
     "node": ">=14.0.0"
